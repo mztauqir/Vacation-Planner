@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+ <div>
+            <form action="/destination" method="put">
+                <h2>Please enter the first and last name of a new diner and whether they will be going or not.</h2>
+                 <div class="form-group">
+                    <label for="dest_id" class="form-label">Destination ID</label>
+                    <input type="text" id="dest_id" name="dest_id" class="form-control" placeholder="Destination ID" required
+                    autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="u_country" class="form-label">Country</label>
+                    <input type="text" id="u_country" name="u_country" class="form-control" placeholder="Country" required
+                    autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="u_city" class="form-label">City</label>
+                    <input type="text" id="u_city" name="u_city" class="form-control" placeholder="City" required
+                    autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="u_sightseeing" class="form-label">Sight Seeing</label>
+                    <input type="text" id="u_sightseeing" name="u_sightseeing" class="form-control" placeholder="Sight Seeing" required
+                    autofocus>
+                </div>
+                 <div class="form-group">
+                    <label for="u_transportation" class="form-label">Transportation</label>
+                    <input type="text" id="u_transportation" name="u_transportation" class="form-control" placeholder="Transportation" required
+                    autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="u_startdate" class="form-label">Start date</label>
+                    <input type="text" id="u_startdate" name="u_startdate" class="form-control" placeholder="Start date" required
+                    autofocus>
+                </div>
+                 <div class="form-group">
+                    <label for="u_enddate" class="form-label">End date</label>
+                    <input type="text" id="u_enddate" name="u_enddate" class="form-control" placeholder="End date" required
+                    autofocus>
+                </div>
+                 <div class="form-group">
+                    <label for="u_tripname" class="form-label">Trip Name</label>
+                    <input type="text" id="u_tripname" name="u_tripname" class="form-control" placeholder="Trip Name" required
+                    autofocus>
+                </div>
+
+                <input class="btn btn-lg btn-primary btn-block" type="submit">
+
+            </form>
+
+
+        </div>
+
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
